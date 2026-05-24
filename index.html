@@ -505,7 +505,7 @@ function submitForm(){
   if(!n||!p||!e||!j||!sel['rg-exp']||!sel['rg-pkg']||!sel['rg-pay']){
     alert('من فضلك املأ كل الحقول المطلوبة (*)');return;
   }
-  var msg='🎓 تسجيل جديد — HR Islam El-Hakim\n\n👤 الاسم: '+n+'\n📱 الهاتف: '+p+'\n📧 الإيميل: '+e+'\n💼 الوظيفة: '+j+'\n📊 خبرة HR: '+sel['rg-exp']+'\n💰 الباقة: '+sel['rg-pkg']+'\n💳 الدفع: '+sel['rg-pay'];
+  var msg='🎓 New Registration\nHuman Resources Course\nBy HR / Islam El-Hakim\n\n👤 الاسم: '+n+'\n📱 الهاتف: '+p+'\n📧 الإيميل: '+e+'\n💼 الوظيفة: '+j+'\n📊 خبرة HR: '+sel['rg-exp']+'\n💰 الباقة: '+sel['rg-pkg']+'\n💳 الدفع: '+sel['rg-pay'];
   var nt=document.getElementById('f-notes').value.trim();
   if(nt) msg+='\n📝 ملاحظات: '+nt;
   window.open('https://wa.me/201120422281?text='+encodeURIComponent(msg),'_blank');
